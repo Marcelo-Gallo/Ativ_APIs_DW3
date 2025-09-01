@@ -14,5 +14,5 @@ TODO:
     -  insere um novo registro na tabela salasdeaula;
 - [X] UpdateSalasDeAula
     - atualiza um registro na tabela salasdeaula de acordo com o ID informado;
-- [ ] DeleteSalasDeAula
+- [X] DeleteSalasDeAula
     - efetua um soft delete e um registro na tabela salasdeaula de acordo com o ID informado. O registro não é apagado fisicamente, apenas o campo removido é passado para true.
