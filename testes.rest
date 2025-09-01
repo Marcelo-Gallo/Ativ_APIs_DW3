@@ -1,0 +1,28 @@
+### Este arquivo é utilizado pela extensão REST Client para simular as requisições.
+
+
+### Inserir uma nova sala de aula
+POST http://localhost:4000/api/salas
+Content-Type: application/json
+
+{
+  "descricao": "Laboratório de Redes",
+  "localizacao": "Bloco B, Sala 205",
+  "capacidade": 40
+}
+
+### Atualizar a sala de aula com ID = 1
+PUT http://localhost:4000/api/salas/1
+Content-Type: application/json
+
+{
+  "descricao": "Laboratório de Informática 1 (Atualizado)",
+  "localizacao": "Bloco A, Sala 101 - Com Projetor",
+  "capacidade": 32
+}
+
+### Remover (soft delete) a sala de aula com ID = 3
+DELETE http://localhost:4000/api/salas/3
+
+### Retorna todas as salas de aula
+GET http://localhost:4000/api/salas
